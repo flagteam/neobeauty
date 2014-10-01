@@ -192,7 +192,7 @@ function travelify_theloop_for_page() {
 
 			<header class="entry-header">
     			<h2 class="entry-title">
-    				<?php the_title(); ?>
+    				<?php //the_title(); ?>
     			</h2><!-- .entry-title -->
   			</header>
 

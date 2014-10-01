@@ -11,7 +11,9 @@
     */
    do_action( 'travelify_before_primary' );
 ?>
-
+<div id="secondary" class="no-margin-left">
+  <?php get_sidebar( 'left' ); ?>
+</div><!-- #secondary -->
 <div id="primary" class="no-margin-left">
    <?php
       /**
