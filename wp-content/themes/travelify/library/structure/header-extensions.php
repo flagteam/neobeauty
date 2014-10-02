@@ -197,7 +197,8 @@ function travelify_headerdetails() {
 	?>
 
 	<div class="container clearfix">
-		<div class="hgroup-wrap clearfix">
+	<?php $header_image = get_header_image(); ?>
+		<div class="hgroup-wrap clearfix" style="background-image: url(<?php echo esc_url( $header_image ); ?>)">
 					<section class="hgroup-right">
 						<?php travelify_socialnetworks( $flag ); ?>
 					</section><!-- .hgroup-right -->
@@ -228,10 +229,11 @@ function travelify_headerdetails() {
 
 		</div><!-- .hgroup-wrap -->
 	</div><!-- .container -->
-	<?php $header_image = get_header_image();
-			if( !empty( $header_image ) ) :?>
-				<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-			<?php endif; ?>
+	<?php //$header_image = get_header_image();
+			//if( !empty( $header_image ) ) :?>
+				<!-- <img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"> -->
+			<?php //endif; ?>
+			<?php masterslider(1); ?>
 	<?php
 		if ( has_nav_menu( 'primary' ) ) {
 			$args = array(
@@ -271,7 +273,7 @@ function travelify_headerdetails() {
 		    		if( function_exists( 'travelify_breadcrumb' ) )
 						travelify_breadcrumb();
 					?>
-				   <h3 class="page-title"><?php echo travelify_header_title(); ?></h3><!-- .page-title -->
+				   <h3 class="page-title"><?php die; echo travelify_header_title(); ?></h3><!-- .page-title -->
 				</div>
 	    	</div>
 	   <?php

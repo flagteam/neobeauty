@@ -71,7 +71,6 @@
 				 */
 				do_action( 'travelify_header' );
 			?>
-			<?php masterslider(1); ?>
 		</header>
 		<?php
 			/**
