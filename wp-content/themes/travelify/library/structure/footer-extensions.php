@@ -27,7 +27,23 @@ function travelify_open_sitegenerator_div() {
 
 /****************************************************************************************/
 
-add_action( 'travelify_footer', 'travelify_footer_info', 30 );
+add_action( 'travelify_footer', 'travelify_footer_cms', 30 );
+/**
+ * function to show the footer info, copyright information
+ */
+function travelify_footer_cms() {
+$footer1 = get_page('104')->post_content;
+$footer2 = get_page('108')->post_content;
+$footer3 = get_page('113')->post_content;
+$footer4 = get_page('115')->post_content;
+echo '<div class="footerline"><div class="footer1">'.$footer1.'</div><div class="footer2">'.$footer2.'</div><div class="footer3">'.$footer3.'</div></div><div class="footerline"><div class="footerfull">'.$footer4.'</div></div>';
+
+}
+
+
+/****************************************************************************************/
+
+add_action( 'travelify_footer', 'travelify_footer_info', 40 );
 /**
  * function to show the footer info, copyright information
  */
@@ -38,7 +54,7 @@ function travelify_footer_info() {
 
 /****************************************************************************************/
 
-add_action( 'travelify_footer', 'travelify_close_sitegenerator_div', 35 );
+add_action( 'travelify_footer', 'travelify_close_sitegenerator_div', 45 );
 
 
 /**
