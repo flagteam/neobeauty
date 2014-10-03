@@ -198,7 +198,7 @@ function travelify_headerdetails() {
 
 	<div class="container clearfix">
 	<?php $header_image = get_header_image(); ?>
-		<div class="hgroup-wrap clearfix" style="background-image: url(<?php echo esc_url( $header_image ); ?>)">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="hgroup-wrap clearfix" style="background-image: url(<?php echo esc_url( $header_image ); ?>)">
 					<section class="hgroup-right">
 						<?php travelify_socialnetworks( $flag ); ?>
 					</section><!-- .hgroup-right -->
@@ -228,6 +228,7 @@ function travelify_headerdetails() {
 				</hgroup><!-- #site-logo -->
 
 		</div><!-- .hgroup-wrap -->
+		</a>
 	</div><!-- .container -->
 	<?php //$header_image = get_header_image();
 			//if( !empty( $header_image ) ) :?>
