@@ -19,13 +19,13 @@
 define('DB_NAME', 'flagteam');
 
 /** MySQL database username */
-define('DB_USER', 'flagteam');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'flagteam123');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'db4free.net:3306/flagteam');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
