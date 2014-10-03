@@ -99,5 +99,11 @@ function travelify_setup() {
 	add_editor_style();
 }
 endif; // travelify_setup
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+function sb_woo_remove_reviews_tab($tabs) {
 
+    unset($tabs['reviews']);
+
+    return $tabs;
+}
 ?>

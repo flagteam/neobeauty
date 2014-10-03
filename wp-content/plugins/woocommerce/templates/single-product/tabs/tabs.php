@@ -19,7 +19,7 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $tabs ) ) : ?>
 
-	<div class="woocommerce-tabs">
+	<div class="woocommerce-tabs" style="display: none">
 		<ul class="tabs">
 			<?php foreach ( $tabs as $key => $tab ) : ?>
 
