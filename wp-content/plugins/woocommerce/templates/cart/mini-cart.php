@@ -63,7 +63,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	<p class="buttons">
 		<a href="<?php echo WC()->cart->get_cart_url(); ?>" class="button wc-forward"><?php _e( 'View Cart', 'woocommerce' ); ?></a>
-		<a href="<?php echo WC()->cart->get_checkout_url(); ?>" class="button checkout wc-forward"><?php _e( 'Checkout', 'woocommerce' ); ?></a>
+		<a href="<?php echo WC()->cart->get_checkout_url(); ?>" class="button checkout wc-forward" style:"display:none;"><?php _e( 'Checkout', 'woocommerce' ); ?></a>
 	</p>
 
 <?php endif; ?>
