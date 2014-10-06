@@ -27,7 +27,7 @@ $srp_default_widget_values = array(
 	'post_type'                    => 'post',                  // The displayed post type
 	'show_all_posts'               => 'no',                    // The 'Show All Posts/Pages' option value
 	'show_sticky_posts'            => 'no',                    // The 'Show Sticky Posts?' option value
-	'widget_title'                 => 'Special Recent Posts',  // The widget title
+	'widget_title'                 => 'Tin mới nhất',  // The widget title
 
 	// THUMBNAIL OPTIONS
 	'display_thumbnail'            => 'yes',                   // The 'Display Thumbnails?' option value
