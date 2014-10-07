@@ -111,7 +111,7 @@ function sb_woo_remove_reviews_tab($tabs) {
 add_filter('loop_shop_columns', 'loop_columns');
 if (!function_exists('loop_columns')) {
     function loop_columns() {
-        return 2; // 2 products per row
+        return 3; // 3 products per row
     }
 }
 ?>
