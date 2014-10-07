@@ -86,3 +86,6 @@
 			do_action( 'travelify_before_main' );
 		?>
 		<div id="main" class="container clearfix">
+            <div id="secondary" class="no-margin-left">
+                <?php get_sidebar( 'left' ); ?>
+            </div><!-- #secondary -->
