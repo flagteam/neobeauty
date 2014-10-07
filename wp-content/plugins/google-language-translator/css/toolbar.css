@@ -1,6 +1,5 @@
 #glt-toolbar { display:none; }
 #glt-translate-trigger {
-	display: none;
     position:fixed;
     bottom:0px;
     top:auto;
