@@ -114,7 +114,7 @@ hr {
 -----------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
 	font-weight: normal;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Tahoma', sans-serif;
 	color: #555;
 }
 h1 {
@@ -473,7 +473,7 @@ a.more-link:hover {
 /* Back to Top */
 .back-to-top {
 	position: fixed;
-	bottom: 10px;
+	bottom: 55px;
 	right: 18px;
 }
 .back-to-top a:before {
@@ -508,7 +508,7 @@ a.more-link:hover {
 	margin-top: 32px;
 }
 #site-title {
-	font: 36px 'Ubuntu', sans-serif;
+	font: 36px 'Tahoma', sans-serif;
 	line-height: 42px;
 }
 #site-title a {
@@ -933,7 +933,7 @@ display:none;
 }
 #content .post {
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom:5px;
 	border-top: 2px dashed #eaeaea;
 }
 #content .post:first-child {
@@ -941,23 +941,24 @@ display:none;
 	border-top: none;
 }
 .page-title-wrap {
-	background-color: #f5f5f5;
+	
 	border-bottom: 1px solid #eaeaea;
-	padding: 20px 0;
+	padding: 10px 20px;
 }
 .page-title {
 	font-size: 24px;
 	line-height: 30px;
-	color: #555;
+	color: #056bcd ;
 	font-weight: normal;
 	float: left;
 	padding-top: 2px;
+	text-transform:uppercase;
 }
 .page-title a {
 	color: #555;
 }
 .entry-title {
-	font: 24px 'Ubuntu', sans-serif;
+	font: 24px 'Tahoma', sans-serif;
 	line-height: 1.4em;
 }
 .entry-title,.entry-title a {
@@ -1004,7 +1005,7 @@ font-weight:bold;
     line-height: 41px;
     overflow: hidden;
     padding-left: 10px;
-    width: 554px;
+    width: auto;
 
 	background: #009fff; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -1629,7 +1630,7 @@ margin:0 !important;
     font-size: 16px;
     font-weight: bold !important;
 }
-.add_to_cart_button
+.add_to_cart_button,a.wc-forward
 {
 background: #09a6ff !important; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -1645,7 +1646,7 @@ color:#fff !important;
 text-shadow:none !important;
 
 }
-.add_to_cart_button:hover{
+.add_to_cart_button:hover,a.wc-forward:hover{
 background: #ffdf16; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZGYxNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2EzMGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) !important;
@@ -1693,7 +1694,14 @@ background:#fff;
     font-weight: bold;
  }
  ul.products li .onsale{display:none;}
-#content article .entry-header{display:none;}
+ #content article .entry-header h2{padding:0}
+#content article .entry-header h2 a{ color: #056bcd !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+	line-height:18px;
+	padding:0;
+	
+	}
  ul.products li h3{
 display: block;
     font-weight: bold;
@@ -1953,8 +1961,18 @@ article {
 	background: #fff;
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	
 }
-.medium-wrap article {
+body.category section article figure{
+ display: block;
+    float: left;
+    margin-right: 10px;
+    width: 130px;
+}
+body.category article{
+padding:10px;
+} 
+.medium-wrap article  {
 	padding: 0;
 }
 .medium-wrap {
@@ -2134,7 +2152,7 @@ color:#fff !important;
 		display: block;
 		width: 100%;
 		border: 0 none;
-		font: 14px 'Ubuntu', sans-serif;
+		font: 14px 'Tahoma', sans-serif;
 		color: #555;
 		height: 24px;
 	}
