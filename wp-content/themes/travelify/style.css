@@ -913,7 +913,7 @@ background: url("../images/h-menu-hover.jpg") repeat-x scroll left top rgba(0, 0
 	border-bottom: 3px solid #57ad68;
 }
 #primary {
-	  float: left;
+	float: left;
     position: relative;
     width: 564px;
 	margin: 0 9px !important;
@@ -1627,7 +1627,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf16', end
 
 }
 
-#content .woocommerce ul.products li {
+#content .woocommerce ul.products li, #content-woocommerce  ul.products li{
  background: none repeat scroll 0 0 white;
     border: 1px solid #07a2ff;
     display: inline;
@@ -1639,9 +1639,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf16', end
     position: relative;
     width: 244px !important;
 }
-#content .woocommerce ul.products li .onsale{display:none;}
+#content .woocommerce ul.products li .onsale,#content-woocommerce ul.products li .onsale{display:none;}
 #content article .entry-header{display:none;}
-#content .woocommerce ul.products li h3{
+#content .woocommerce ul.products li h3, #content-woocommerce ul.products li a h3{
 display: block;
     font-weight: bold;
     height: 37px;
@@ -1651,6 +1651,7 @@ display: block;
     text-align: center;
 	color:#056bcd !important;
 }
+form.woocommerce-ordering{margin-right: 15px!important}
 .srp-thumbnail-box{
  display: block;
     float: left;
@@ -1929,13 +1930,11 @@ article {
 }
 
 #content-woocommerce {
-	margin-bottom: 20px;
 	float: left;
-	width: 62.6%;
-	padding: 10px 1.5%;
-	background: #fff;
-	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 564px;
+	margin: 0 9px !important;
+	background: none repeat scroll 0 0 #fff;
 }
 #content-woocommerce .page-title {
 	display: block;
